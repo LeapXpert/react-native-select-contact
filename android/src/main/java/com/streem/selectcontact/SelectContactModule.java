@@ -166,7 +166,8 @@ public class SelectContactModule extends ReactContextBaseJavaModule implements A
                 Entity.MIMETYPE,
                 Entity.DATA1,
                 Entity.DATA2,
-                Entity.DATA3
+                Entity.DATA3,
+                Entity.DATA5
         };
         String sortOrder = Entity.RAW_CONTACT_ID + " ASC";
         Cursor cursor = this.contentResolver.query(contactUri, projection, null, null, sortOrder);
